@@ -1,0 +1,31 @@
+.from{
+    background-color: #eee;
+     text-align: left;
+     width:20%;
+     height:40px;
+     color:#000;
+}
+.to{
+    background-color: #eee;
+    text-align: right;
+    width:20%;
+    height:40px;
+    color:#000;
+    margin-left:80%;
+    text-align:left;
+    border-radius:3%;
+}
+.nameField{
+    width:50%;
+}
+h4{
+    color:#fff;
+    margin-left:5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}

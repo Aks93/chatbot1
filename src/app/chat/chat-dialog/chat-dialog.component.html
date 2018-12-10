@@ -1,0 +1,40 @@
+<h4 align="text-center">
+</h4>
+<head>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    
+    
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    
+    
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<nav class="navbar navbar-dark" style="background-color:#563d7c;margin-top:-15px;">
+    <h4 style="margin-left:50%">CHATBOT</h4>
+    <h6 style="color:#fff;margin-left:50%;">Chat with the bot!!</h6>
+  </nav>
+
+<ng-container *ngFor="let message of messages | async">
+  <div class = "message" [ngClass]="{ 'from' : message.sentBy === 'bot','to' : message.sentBy === 'user'}">
+    {{ message.content }}
+  </div>
+
+
+</ng-container>
+
+
+<label for="nameField">Your Message</label>
+
+  <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
+  <br><br><br>
+  <button (click)="sendMessage()" style="background-color:#eee">Send</button>
+ <br/><br/><br/>
+ <h4 style="color:#000;margin-top:300px;margin-left:40%;">©Akshata 2018-2019</h4>
