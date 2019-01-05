@@ -17,9 +17,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
-<nav class="navbar navbar-dark" style="background-color:#563d7c;margin-top:-15px;">
+<nav class="navbar navbar-dark" style="background-color:#000;margin-top:-15px;">
     <h4 style="margin-left:50%">CHATBOT</h4>
-    <h6 style="color:#fff;margin-left:50%;">Chat with the bot!!</h6>
   </nav>
 
 <ng-container *ngFor="let message of messages | async">
@@ -30,11 +29,11 @@
 
 </ng-container>
 
-
+<br/><br/>
 <label for="nameField">Your Message</label>
 
   <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
   <br><br><br>
-  <button (click)="sendMessage()" style="background-color:#eee">Send</button>
+  <button (click)="sendMessage()" style="background-color:crimson;color:#fff">Send</button>
  <br/><br/><br/>
- <h4 style="color:#000;margin-top:300px;margin-left:40%;">©Akshata 2018-2019</h4>
+ <h4 style="color:#000;margin-top:300px;margin-left:40%;"></h4>
